@@ -1,0 +1,75 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+$color_1: #f14444;
+$color_2: #444;
+$color_3: #fff;
+$border_color_1: #ccc;
+$border_color_2: #fff;
+$border_color_3: #f14444;
+
+nav.navbar-findcond {
+  background: #fff;
+  border-color: $border_color_1;
+  box-shadow: 0 0 2px 0 #ccc;
+  a {
+    color: $color_1;
+  }
+  ul.navbar-nav {
+    a {
+      color: $color_1;
+      border-style: solid;
+      border-width: 0 0 2px 0;
+      border-color: $border_color_2;
+      &:hover {
+        background: #fff;
+        border-color: $border_color_3;
+      }
+      &:visited {
+        background: #fff;
+      }
+      &:focus {
+        background: #fff;
+      }
+      &:active {
+        background: #fff;
+      }
+    }
+  }
+  ul.dropdown-menu {
+    >li {
+      >a {
+        color: $color_2;
+        &:hover {
+          background: #f14444;
+          color: $color_3;
+        }
+      }
+    }
+  }
+}
+button[type="submit"] {
+  border-radius: 2px;
+  color: $color_3;
+  background: #e74c3c;
+  padding: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  transition: background .5s;
+  &:hover {
+    background: #2f3c4e;
+  }
+}

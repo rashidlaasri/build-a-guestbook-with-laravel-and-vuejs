@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Scotch GuestBook",
+		"_postman_id": "b2c28f0d-7efa-1659-3739-5ec8b127755b",
+		"description": "The tests for Scotch GuestBook API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all signatures",
+			"request": {
+				"url": "http://guestbook.dev/api/signatures",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Find a signature by ID",
+			"request": {
+				"url": "http://guestbook.dev/api/signatures/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new signature",
+			"request": {
+				"url": "http://guestbook.dev/api/signatures/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john@example.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua.",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Report a signature",
+			"request": {
+				"url": "http://guestbook.dev/api/signatures/1/report",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "me@example.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
